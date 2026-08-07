@@ -10,11 +10,15 @@
 
   <!-- Pure, full-bleed slideshow container -->
   <div class="slideshow-widget">
-    <div class="slide active" style="background-image: url('kh2.jpg');"></div>
-    <div class="slide" style="background-image: url('uncharted4.jpg');"></div>
-    <div class="slide" style="background-image: url('jak.jpg');"></div>
-    <div class="slide" style="background-image: url('ffx.jpg');"></div>
-    <div class="slide" style="background-image: url('dissidia.jpg');"></div>
+    <!-- Updated with your 8 precise file extensions (.png vs .jpg) -->
+    <div class="slide active" style="background-image: url('Crash 1.png');"></div>
+    <div class="slide" style="background-image: url('Dissidia.png');"></div>
+    <div class="slide" style="background-image: url('FFX.png');"></div>
+    <div class="slide" style="background-image: url('Gravity Rush.png');"></div>
+    <div class="slide" style="background-image: url('Jak.png');"></div>
+    <div class="slide" style="background-image: url('KH1.png');"></div>
+    <div class="slide" style="background-image: url('MK8.jpg');"></div>
+    <div class="slide" style="background-image: url('SMG.jpg');"></div>
   </div>
 
   <!-- JavaScript handles only the image loops now -->
@@ -31,9 +35,9 @@
         }, 1500, currentIndex);
 
         currentIndex = (currentIndex + 1) % slides.length;
-      slides[currentIndex].classList.add('active');
-    }, 4000); // 4000 milliseconds = 4 seconds per slide instead of 7
-  });
-</script>
+        slides[currentIndex].classList.add('active');
+      }, 4000); // 4000 milliseconds = 4 seconds per slide instead of 7
+    });
+  </script>
 </body>
 </html>
