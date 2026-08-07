@@ -17,7 +17,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  /* Removed border-radius so iiSU handles the rounding natively */
+  /* Border-radius removed so iiSU handles the framing natively */
 }
 
 .slide {
