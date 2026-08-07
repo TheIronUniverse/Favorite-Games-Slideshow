@@ -8,16 +8,16 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: transparent; /* Allows any background behind it to show through if necessary */
+  background: transparent;
 }
 
-/* Container scales to 100% of whatever box size iiSU forces it into */
 .slideshow-widget {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  /* Removed border-radius so iiSU handles the rounding natively */
 }
 
 .slide {
@@ -27,11 +27,9 @@ html, body {
   background-position: center;
   opacity: 0;
   transform: scale(1.05);
-  /* Changed opacity fade from 1.5s to 0.8s for a snappier transition */
-  transition: opacity 0.8s ease-in-out, transform 5s linear; 
+  transition: opacity 1.5s ease-in-out, transform 8s linear;
 }
 
-/* Fades the image in and starts a premium slow zoom */
 .slide.active {
   opacity: 1;
   transform: scale(1.15);
